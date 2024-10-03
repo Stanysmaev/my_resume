@@ -547,7 +547,7 @@ body {
     grid-auto-rows: minmax(10px, auto);
     grid-template-areas:
     "hd8 hd9"
-    "hd10 .";
+    "hd10 hd10";
     background-color: rgb(30 41 57); /* Полупрозрачный серый фон */
     backdrop-filter: blur(10px); /* Размытие фона */
     padding: 20px;
@@ -571,4 +571,47 @@ body {
     grid-area: hd10;
     margin-top: 20px
   }
+}
+
+@media (max-width: 570px) {
+
+  .about-me-name {
+    line-height: 30px;
+    font-size: 25px;
+  }
+
+  .me_img {
+    width: 115px;
+    height: 120px;
+  }
+
+  .sidebar_title {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .grid-container {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    width: auto;
+  }
+
+  .contacts-section {
+    margin-top: 0px;
+  }
+
+  .about-me-profession {
+    margin-top: -2.1px;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 0px;
+  }
+
+  .tech-skills-list-item {
+    font-size: 11px;
+    line-height: 24px;
+ }
+
 }
