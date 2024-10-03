@@ -5,6 +5,10 @@ body {
   margin: 0;
 }
 
+.mobile-display-none {
+  display: none;
+}
+
  /* .main-container {
   display: flex;
   flex-direction: row-reverse;
@@ -422,4 +426,149 @@ body {
     margin-bottom: 40px;
   }
 
+}
+
+@media (max-width: 660px) {
+
+  .non-mobile-display-none {
+    display: none;
+  }
+
+  .mobile-display-none {
+    display: inline-block;
+    
+  }
+
+  .main-container-mobile {
+    padding: 15px;
+    margin: 0;
+  }
+
+  .me_img {
+    width: 226px;
+    height: 220px;
+    border-radius: 4%;
+    object-fit: cover;
+    border: 0px solid #ffffff;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 48%);
+    grid-area: hd1;
+    margin-right: 5px;
+  }
+
+  .about-me-section {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: hd2;
+  }
+
+  .about-me-profession {
+    margin-top: -18.1px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    margin-bottom: 40px;
+    margin-bottom: 0 0 20px 0;
+    grid-area: hd3;
+    padding-left: 0px;
+    text-shadow: 0px 9px 33px rgb(0 0 0 / 30%);
+}
+
+  .image-FIO-posada {
+    display: grid;
+    grid-template-columns: repeat(2, 4);
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas:
+    "hd1 hd2"
+    "hd1 hd3"
+    "hd4 hd4"
+    "hd5 hd5";
+
+    /* width: 400px;
+    height: 300px; */
+    background-color: rgb(30 41 57); /* Полупрозрачный серый фон */
+    backdrop-filter: blur(10px); /* Размытие фона */
+    padding: 20px;
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень для эффекта */
+  }
+
+  .about-me-name {
+    padding-left: 0px;
+    text-shadow: 0px 9px 33px rgb(255 255 255 / 0%);
+    color: #ffffff;
+  }
+
+  .about_me_description {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fbfbfb;
+    grid-area: hd4;
+
+    background-color: rgb(89 88 153 / 50%);
+    backdrop-filter: blur(10px); /* Размытие фона */
+    padding: 20px;
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень для эффекта */
+  }
+
+  .contacts-section {
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1);
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas:
+    "hd6 hd7";
+    align-items: center;
+    grid-area: hd5;
+
+  }
+
+  .sidebar_title {
+    margin-top: 10px;
+    grid-area: hd6;
+  }
+
+  .grid-container {
+    grid-area: hd7;
+  }
+
+  .about-me-section-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 2);
+    grid-auto-rows: minmax(10px, auto);
+    grid-template-areas:
+    "hd8 hd9"
+    "hd10 .";
+    background-color: rgb(30 41 57); /* Полупрозрачный серый фон */
+    backdrop-filter: blur(10px); /* Размытие фона */
+    padding: 20px;
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень для эффекта */
+    margin-top: 25px;
+  }
+
+  .tech_skills_section {
+    margin-top: 0px;
+    grid-area: hd8;
+  }
+
+  .soft_skills_section {
+    margin-top: 0px;
+    max-width: 280px;
+    grid-area: hd9;
+  }
+
+  .soft_skills_section_language {
+    grid-area: hd10;
+    margin-top: 20px
+  }
 }

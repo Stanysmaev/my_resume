@@ -13,7 +13,7 @@
 </head>
 <body>
     <!--  main container -->
-    <div class="main-container">
+    <div class="main-container non-mobile-display-none">
         <!--  sidebar section -->
         <aside class="sidebar-section">
             <img src="img/me.jpg" width="370" alt="my photo" class="me_img">
@@ -196,6 +196,136 @@
             </div>
             
         </div>
+    </div>
+
+
+
+
+
+
+    <div class="main-container-mobile mobile-display-none">
+
+        <div class="about-me-section">
+            <div class="image-FIO-posada">
+                <img src="img/me.jpg" width="370" alt="my photo" class="me_img">
+                <h1 class="about-me-name">Станіслав Камаєв</h1>
+                <h2 class="about-me-profession">Project-manager</h2>
+                <p class="about_me_description">Я маю обширний досвід у сфері IT. Вмію програмувати на C++, C#, python, JavaScript, CSS та HTML, 
+                    вмію створювати бази даних у SQL та Google Sheets, розробляти ботів для Telegram та Discord. Є досвід у роботі Front-end та 
+                    Web-design у Figma, верстав сайти з макетів у Figma, та створював дизайни сайтів.</p>
+
+                <!--  contacts section  -->
+            <div class="contacts-section">
+                <h3 class="sidebar_title">Contact information</h3>
+                <div class="grid-container">
+                    <div class="grid-item"> <span class="contacts_section_type">Тел.:</span> </div>
+                    <div class="grid-item"> <a class="contacts_section_link" href="tel:+380937682142">+38(093)768-21-42</a> </div>
+                    <div class="grid-item"> <span class="contacts_section_type">Email:</span> </div>
+                    <div class="grid-item"> <a class="contacts_section_link" href="mailto:yarik231988@gmail.com">yarik231988@gmail.com</a> </div>
+                </div>
+                <!--<div>
+                    <span class="contacts_section_type">Phone:</span>
+                    <a class="contacts_section_link" href="tel:+380937682142">+38(093)768-21-42</a> 
+                </div>
+                <div>
+                    <span class="contacts_section_type">Email:</span>
+                    <a class="contacts_section_link" href="mailto:yarik231988@gmail.com">yarik231988@gmail.com</a>
+                </div>-->
+            </div>
+            </div>
+            
+            
+        </div>
+
+        <!--  my work expirience section  -->
+        <div class="my-work-expirience-section">
+            <h3 class="main-content-title">Work Experience</h3>
+
+            <!--  company 2  -->
+            <div class="my-work-expirience-company-block">
+                <h4 class="my-work-expirience-position">Manager <span class="my-work-expirience-company">Freelance</span></h4>
+                <p class="date">July 2023 - up to now <span class="my-work-expirience-divider">|</span> Ukraine</p>
+
+                <ul class="my-work-expirience-duties">
+
+                    <li class="my-work-expirience-duty">Створення БД робітників компанії та збір даних. (Google Sheets та SQL)</li>
+                    <li class="my-work-expirience-duty">Контроль за роботою працівників.</li>
+                    <li class="my-work-expirience-duty">Бухгалтерія та контроль БД з даними о фінансах компанії.</li>
+                    <li class="my-work-expirience-duty">Налагодження роботи різних відділів.</li>
+                    <li class="my-work-expirience-duty">Генерація ідей для покращення процесів.</li>
+                    <li class="my-work-expirience-duty">Проведення онлайн зустрічей та брейнштормів.</li>
+                    <li class="my-work-expirience-duty">Створення ботів для відправки інформації з БД у месенджер Telegram.</li>
+
+                </ul>
+
+            </div>
+
+            <!--  company 1  -->
+            <div class="my-work-expirience-company-block">
+                <h4 class="my-work-expirience-position">Front-End Developer <span class="my-work-expirience-company">Freelance</span></h4>
+                <p class="date">September 2019 - July 2020 <span class="my-work-expirience-divider">|</span> Ukraine</p>
+
+                <ul class="my-work-expirience-duties">
+
+                    <li class="my-work-expirience-duty">Верстка сайтів з макетів Figma.</li>
+                    <li class="my-work-expirience-duty">Додавання анімацій до сайтів.</li>
+
+                </ul>
+
+            </div>
+        </div>
+
+        <!--  education  -->
+        <div class="my-education-section">
+            <h3 class="main-content-title">Education</h3>
+            <h4 class="education-point">Харківський національний університет міського господарства імені О.М.Бекетова <span class="my-education-building">University</span></h4>
+            <p class="education-date">September 2022 - Completion on june 2026 | Ukraine</p>
+            <li class="my-work-expirience-duty">122 Комп'ютерні науки. Управління</li>
+        
+            <h4 class="education-point">Харківський комп'ютерно-патентний коледж <span class="my-education-building">College</span></h4>
+            <p class="education-date">September 2018 - June 2022 | Ukraine</p>
+            <li class="my-work-expirience-duty">123 Комп'ютерна інженерія</li>
+            
+        </div>
+
+        <div class="about-me-section-2">
+            <!--  tech skills section -->
+            <div class="tech_skills_section">
+                <h3 class="sidebar_title">Tech Skills</h3>
+                <ul class="tech-skills-list">
+                    <li class="tech-skills-item"> <span class="tech-skills-list-item">HTML5</span> </li>
+                    <li class="tech-skills-item"> <span class="tech-skills-list-item">CSS3</span></li>
+                    <li class="tech-skills-item"> <span class="tech-skills-list-item">GIT</span></li>
+                    <li class="tech-skills-item"> <span class="tech-skills-list-item">WebPack</span></li>
+                    <li class="tech-skills-item"> <span class="tech-skills-list-item">C++, C#</span></li>
+                    <li class="tech-skills-item"> <span class="tech-skills-list-item">Python</span></li>
+                    <li class="tech-skills-item"> <span class="tech-skills-list-item">JavaScript</span></li>
+                    <li class="tech-skills-item"> <span class="tech-skills-list-item">Figma</span></li>
+                </ul>
+            </div>
+
+            <!--  Soft Skills section -->
+            <div class="soft_skills_section">
+                <h3 class="sidebar_title">Soft Skills</h3>
+                <ul class="tech-skills-list">
+                    <li class="tech-skills-item"> <span class="tech-skills-list-item">Стресостійкість</span></li>
+                    <li class="tech-skills-item"> <span class="tech-skills-list-item">Емпатія</span></li>
+                    <li class="tech-skills-item"> <span class="tech-skills-list-item">Вміння ясно викладати думки та ідеї</span></li>
+                    <li class="tech-skills-item"> <span class="tech-skills-list-item">Відповідальність за результат</span></li>
+                    <li class="tech-skills-item"> <span class="tech-skills-list-item">Планування та постановка пріоритетів</span></li>
+                    <li class="tech-skills-item"> <span class="tech-skills-list-item">Teamwork</span></li>
+                </ul>
+            </div>
+
+            <!--  Soft Skills section -->
+            <div class="soft_skills_section_language">
+                <h3 class="sidebar_title">Languages</h3>
+                <ul class="tech-skills-list">
+                    <li class="tech-skills-item"> <span class="tech-skills-list-item">English - B1 Intermediate</span></li>
+                </ul>
+            </div>
+        </div>
+        
     </div>
 </body>
 </html>
