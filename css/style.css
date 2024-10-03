@@ -1,20 +1,37 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #f5f7fa;
+  display: inline;
+  margin: 0;
 }
 
-.main-container {
+ /* .main-container {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
   width: 1200px;
   background-color: #fff;
   margin: 40px auto;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}  */
+
+.main-container {
+  display: grid;
+  grid-template-columns: 370px 870px; /* 2 колонки одинаковой ширины */
+  margin: 50px auto 50px auto;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  max-width: 1240px;
+
 }
+
+
 
 /* main content section */
 .main-content-section {
   padding: 100px 90px;
+  width: auto;
+  background-color: #fff;
 }
 
 .main-content-title {
@@ -31,11 +48,13 @@ body {
 }
 
 .about-me-profession {
+  margin-top: -18.1px;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
   color: #000;
+  margin-bottom: 40px; /*По часовой стрелке: верхний-правый-нижний-левый*/
   margin-bottom: 0 0 20px 0; /*По часовой стрелке: верхний-правый-нижний-левый*/
 }
 
@@ -50,7 +69,9 @@ body {
 }
 
 .about_me_description {
-  width: 400px;
+  margin-top: -18.7px;
+  margin-bottom: 60px;
+  width: 600px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -114,6 +135,16 @@ body {
   margin-bottom: 10px;
 }
 
+.education-date {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+  margin-bottom: 10px;
+  margin-top: -9.3px;
+}
+
 .date {
   font-style: normal;
   font-weight: normal;
@@ -121,6 +152,11 @@ body {
   line-height: 15px;
   color: #a8a8a8;
   margin-bottom: 10px;
+}
+
+.my-work-expirience-section {
+
+  margin-bottom: 60px;
 }
 
 .my-work-expirience-divider {
@@ -144,41 +180,46 @@ body {
 }
 
 .my-work-expirience-company-block {
-  margin: 0 15px 0 0;
-}
-
-/* education */
-.education-point {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  color: #fb6d3a;
 }
 
 .education {
+  margin-top: 16px !important;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
-  color: #000000;
+  color: #595959;
   margin: 10px 0 10px 0;
+}
+
+/* education */
+.education-point {
+  width: 600px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
 }
 
 /* sidebar section */
 .sidebar-section {
   background-color: #1e2939;
-  width: 370px;
-  padding: 40px 0;
+  width: auto;
+  padding: 40px 40px;
 }
 
-.contacts-section,
+.contacts-section {
+  margin-top: 46px;
+}
+
 .tech_skills_section {
-  margin: 50px 0 0 40px;
+  margin-top: 47px;
 }
 
 .soft_skills_section {
-  margin: 45px 0 0 40px;
+  margin-top: 47px;
+  max-width: 280px;
 }
 
 .sidebar_title {
@@ -220,4 +261,168 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #fff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 60px 1fr; /* 2 колонки одинаковой ширины */
+  grid-template-rows: auto auto; /* 2 строки */
+  gap: 0px; /* Расстояние между ячейками */
+  width: 280px;
+  border: 0px solid black;
+  padding: 0px;
+  margin-left: 0px;
+}
+.grid-item {
+  border: 0px solid black;
+  padding: 0px;
+  text-align: left;
+}
+
+.me_img {
+  width: auto;
+  height: 370px;
+  border-radius: 4%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  box-shadow: 0px 0px 10px rgb(255 255 255 / 20%);
+}
+
+.my-education-building {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fb6d3a;
+}
+
+@media (max-width: 1390px) {
+
+  .main-container {
+    width: auto;
+    margin: 50px 60px 50px 60px;
+    grid-template-columns: 370px auto;
+    justify-content: normal;
+  }
+
+}
+
+
+@media (max-width: 1304px) {
+
+  .about-me-section {
+    margin-bottom: 40px;
+  }
+
+  .about_me_description {
+    width: auto;
+  }
+
+  .about-me-name {
+    width: auto;
+  }
+
+  .education-point {
+    width: auto;
+  }
+
+}
+
+@media (max-width: 1134px) {
+
+  .about_me_description {
+    text-align: justify;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .main-container {
+    width: auto;
+    margin: 30px;
+    grid-template-columns: 370px auto;
+    justify-content: normal;
+  }
+
+  .about-me-name {
+    font-size: 55px;
+  }
+
+  .about-me-profession {
+    font-size: 17px;
+  }
+
+  .about_me_description {
+    font-size: 17px;
+  }
+  
+  .main-content-title {
+    font-size: 25px;
+  }
+
+  .my-work-expirience-position {
+    font-size: 19px;
+  }
+
+  .education-point {
+    font-size: 17px;
+  }
+  .date {
+    font-size: 14px;
+  }
+
+  .education-date {
+    font-size: 14px;
+  }
+
+  .my-work-expirience-duty {
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 906px) {
+
+  .main-content-section {
+    padding: 50px 45px;
+  }
+
+  .main-container {
+    margin: 15px;
+    grid-template-columns: 330px auto;
+  }
+
+  .sidebar-section {
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 870px) {
+
+}
+
+@media (max-width: 870px) {
+
+  .main-container {
+    grid-template-columns: 270px auto;
+  }
+
+  .me_img {
+    height: 15%;
+    width: 97%;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .about-me-name {
+    font-size: 50px;
+  }
+
+  .about_me_description {
+    margin-bottom: 40px;
+  }
+
 }
